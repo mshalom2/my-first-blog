@@ -7,6 +7,7 @@ class Category(models.Model):
 
 	def Add_To_Cat(self):
 		self.save()
+		
 	def __str__(self):
 		return self.cat_name
 	
