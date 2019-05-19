@@ -9,23 +9,11 @@
 	<h1 id="H1">All Uganda</h1>
 		<div id="cat_list">
 			<h2>Categories</h2>
+			{% for cat in cats:%}
 				<div>
-					<li>Education</li>
-					<li>News</li>
-					<li>Shopping</li>
-					<li>Transport</li>
-					<li>Entertainment</li>
-					<li>Accomodation</li>
-					<li>Work And Money</li>
-					<li>Sports</li>	
-					<li>Culture And Art</li>
-					<li>Food and Bars</li>
-					<li>Health Care</li>
-					<li>Insurance</li>
-					<li>Travel</li>
-					<li>Moving to Uganda</li>
-					<li>Safety</li>
+					<li>{{ cat_name }}</li><br>
 				</div>
+			{% endfor %}
 		</div>
 
 		<div id="Brief">
